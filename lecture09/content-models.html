@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Content Models Information</title>
+</head>
+<body>
+<div>
+	<h1 id = "Top">
+		Content models
+	</h1>
+	<article>
+		Each element defined in this specification has a content model: a description of the element's expected contents. An HTML element must have contents that match the requirements described in the element's content model.
+	</article>
+	<ol>
+		<li><a href="#Metadata">Metadata content</a></li>
+		<li><a href="#Flow">Flow content</a></li>
+		<li><a href="#Sectioning">Sectioning content</a></li>
+		<li><a href="#Heading">Heading content</a></li>
+		<li><a href="#Phrasing">Phrasing content</a></li>
+		<li><a href="#Embedded">Embedded content</a></li>
+		<li><a href="#Interactive">Interactive content</a></li>
+	</ol>
+</div>
+<p><dfn id = "Metadata"><b>Metadata content:</b></dfn> It is is content that sets up the presentation or behavior of the rest of the content, or that sets up the relationship of the document with other documents, or that conveys other "out of band" information.<br><br>
+
+<b>Example </b>: base command link meta noscript script style title. <br><br>
+
+Elements from other namespaces whose semantics are primarily metadata-related (e.g. RDF) are also metadata content.</p>
+
+
+<p><dfn id = "Flow"><b>Flow content:</b></dfn>Flow content is a broad category that encompasses most elements that can go inside the &lt;body&gt; element, including heading elements, sectioning elements, phrasing elements, embedding elements, interactive elements, and form-related elements. It also includes text nodes (but not those that only consist of white space characters).</p>
+
+
+<p><dfn id = "Sectioning"><b>Sectioning content:</b></dfn>Sectioning content is a subset of flow content, and can be used everywhere flow content is expected. Elements belonging to the sectioning content model create a section in the current outline that defines the scope of &lt;header&gt; elements, &lt;footer&gt; elements, and heading content<br><br>
+Elements belonging to this category are &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;, and &lt;section&gt;.</p>
+
+
+<p><dfn id = "Heading"><b>Heading content:</b></dfn>Heading content is a subset of flow content, which defines the title of a section, whether marked by an explicit sectioning content element, or implicitly defined by the heading content itself. Heading content can be used everywhere flow content is expected.<br><br>
+
+Elements belonging to this category are h1, h2, h3, h4, h5, h6, and hgroup.</p>
+
+
+
+<p><dfn id = "Phrasing"><b>Phrasing content:</b></dfn>
+Phrasing content is a subset of flow content that defines the text and the markup it contains, and can be used everywhere flow content is expected. Runs of phrasing content make up paragraphs.<br><br>
+
+Elements belonging to this category are abbr, audio, b, bdo, br, button, canvas, cite, code, command, data, datalist, dfn, em, embed, i, iframe, img, input, kbd, keygen, label, mark, math, meter, noscript, object, output, picture, progress, q, ruby, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, u, var, video, wbr and plain text (not only consisting of white spaces characters).<br><br>
+
+A few other elements belong to this category, but only if a specific condition is fulfilled:<br><br>
+
+a, if it contains only phrasing conent <br>
+area, if it is a descendant of a map element<br>
+del, if it contains only phrasing content<br>
+ins, if it contains only phrasing content<br>
+link, if the itemprop attribute is present<br>
+map, if it contains only phrasing content<br>
+meta, if the itemprop attribute is present</p>
+
+
+<p><dfn id = "Embedded"><b>Embedded content:</b></dfn>Embedded content is a subset of flow content that imports another resource or inserts content from another mark-up language or namespace into the document, and can be used everywhere flow content is expected.<br><br>
+
+Elements that belong to this category include: audio, canvas, embed, iframe, img, math, object, picture, svg, video.</p>
+
+<p><dfn id = "Interactive"><b>Interactive content:</b></dfn>Interactive content is a subset of flow content that includes elements that are specifically designed for user interaction, and can be used everywhere flow content is expected. Elements that belong to this category include: a, button, details, embed, iframe, keygen, label, select, and textarea.
+Some elements belong to this category only under specific conditions:
+
+audio, if the controls attribute is present
+img, if the usemap attribute is present
+input, if the type attribute is not in the hidden state
+menu, if the type attribute is in the toolbar state
+object, if the usemap attribute is present
+video, if the controls attribute is present</p>
+
+<h4><a href = "#top">Go to Top</a></h4>
+
+
+<h4> <b>Internal Links Testing : </b><a title="Go to Testing Page" href="Testing.html"> Go to Testing Page </a>
+
+<footer>Website Used :
+<div> 
+<ul>
+<li><a href = "https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html" target = "_blank" title = "Go to W3 Website">W3 HTML Content-Models</a></footer></li>
+<li><a href = "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories" target = "_blank" title= "Go to Mozilla's Website">Mozilla's Information about Content Models</a></li>
+</ul>
+</div>
+</body>
+</html>
