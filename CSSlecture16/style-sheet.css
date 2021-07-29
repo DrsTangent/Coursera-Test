@@ -1,0 +1,14 @@
+h1{
+	text-align: center;
+	color: indianred;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+p{
+	font-size: 12;
+	text-align: justify;
+}
