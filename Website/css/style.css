@@ -1,0 +1,34 @@
+body {
+	font-size: 16px;
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: whitesmoke;
+	background-image: url("/resources/background-page.png");
+	background-size: cover;
+	font-family: 'Oxygen', sans-serif;
+}
+#header-nav{
+	background-color: blueviolet;
+	background-image: url("/resources/background-header.png");
+	background-size: cover;
+	border-radius: 0px;
+}
+#logo-img{
+	background: url("/resources/logo.png") no-repeat;
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0px;
+}
+.navbar-brand > a > img{
+	margin-top: 25px;
+	width: 15em;
+}
+.navbar-brand > p{
+	filter: invert(100%);
+	margin-top: 15px;
+}
+.icon-bar{
+	text-align: center;
+}
