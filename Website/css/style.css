@@ -4,18 +4,18 @@ body {
 	height: 100%;
 	width: 100%;
 	background-color: whitesmoke;
-	background-image: url("/resources/background-page.png");
+	background-image: url("../resources/background-page.png");
 	background-size: cover;
 	font-family: 'Oxygen', sans-serif;
 }
 #header-nav{
 	background-color: blueviolet;
-	background-image: url("/resources/background-header.png");
+	background-image: url("../resources/background-header.png");
 	background-size: cover;
 	border-radius: 0px;
 }
 #logo-img{
-	background: url("/resources/logo.png") no-repeat;
+	background: url("../resources/logo.png") no-repeat;
 	background-size: contain;
 	width: 150px;
 	height: 150px;
